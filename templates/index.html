@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<h1>Input practice</h1>
+{% endblock %}
+
+{% block body %}
+<div class="content">
+    <h1>Task master</h1>
+
+    <table>
+        <tr>
+            <th>Task</th>
+            <th>Added</th>
+            <th>Actions</th>
+        </tr>
+        {% for tasks in tasks %}
+        <tr>
+            <td>{{ task.content }}</td>
+            <td>{{ task.date_created.date() }}</td>
+            <td>
+                <a href="">Delete</a>
+                <br>
+                <a href="">Update</a>
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+
+    <form action="/" method="POST">
+        <input type="text" name="content" id="content">
+        <input type="submit" value="Add Task">
+
+    </form>
+</div>
+
+<!-- <form action="/" method="post">
+    <label>Kako se zoveš? </label>
+    <input type="text" name="ime">
+    <input type="submit" value="Submit">
+</form> -->
+
+<!-- {% if ime %}
+    <p>Zdravo {{ ime }} </p>
+{% endif %} -->
+
+{% endblock %}
