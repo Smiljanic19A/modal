@@ -10,7 +10,7 @@ from pydantic import BaseModel, HttpUrl
 from fastapi import FastAPI, File, Form, HTTPException, Request
 from fastapi.responses import FileResponse
 from modal import Image, Stub, asgi_app, NetworkFileSystem
-#from whisperx import load_align_model, align, SubtitlesProcessor
+from whisperx import load_align_model, align, SubtitlesProcessor
 import whisperx
 import Levenshtein
 import pysrt
@@ -144,7 +144,7 @@ def pre_download_model():
     import whisperx
     compute_type = "float16"
     #whisperx.load_model("large-v2", device="cuda", download_root=CACHE_PATH)
-    whisperx.load_model("large-v2", device="cpu", download_root=CACHE_PATH)
+    whisperx.load_model("large-v2", device="cuda", download_root=CACHE_PATH)
 
 
 def pre_download_align_model(language_code="en"):   
@@ -162,8 +162,8 @@ def pre_download_align_model(language_code="en"):
 
     if not model_files_exist:
         processor = Wav2Vec2Processor.from_pretrained(model_name, cache_dir=CACHE_PATH)
+        model = Wav2Vec2ForCTC.from_pretrained(model_name, cache_dir=CACHE_PATH).to("cuda")
         #model = Wav2Vec2ForCTC.from_pretrained(model_name, cache_dir=CACHE_PATH).to("cuda")
-        model = Wav2Vec2ForCTC.from_pretrained(model_name, cache_dir=CACHE_PATH).to("cpu")
 
     else:
         print(f"Model for {language_code} already downloaded.")
@@ -173,12 +173,12 @@ def pre_download_diarization_model():
     import torch
     YOUR_AUTH_TOKEN = "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"
     model_name = "pyannote/speaker-diarization-3.1"
-    #device = "cuda"
-    device = "cpu"
+    device = "cuda"
+    #device = "cpu"
 
 
     diarization_model = Pipeline.from_pretrained(model_name, use_auth_token=YOUR_AUTH_TOKEN)
-    device = torch.device('cpu')
+    device = torch.device('cuda')
     diarization_model.to(device)
     logger.info("Model loaded successfully and moved to CUDA.")
 
@@ -292,17 +292,15 @@ async def download(file_path: str):
 def fastapi_app():
     return web_app
 
+
 def transcribe_and_align_audio(file_contents: bytes, language: str, output_formats: list, custom_dictionary: str = ""):
     language = language.replace('"', '')
     output_formats = [format.replace('"', '') for format in output_formats]
     microtime = str(int(time.time() * 1000))
 
-    #device = "cuda"
-    device = "cpu"
+    device = "cuda"
     batch_size = 16
-    #compute_type = "float16"
     compute_type = "float32"
-
 
     json_path = None
     aligned_json_path = None
@@ -335,8 +333,7 @@ def transcribe_and_align_audio(file_contents: bytes, language: str, output_forma
     print(f"All Transcriptions: {all_transcriptions}")
     transcription_text = cyrillic_to_latin(' '.join([segment["text"] for segment in all_transcriptions]))
     print(f"Transcription Raw Text: {transcription_text}")
-    # TODO: Do the transcription in txt file and save to TXT
-    
+
     # Save original JSON
     output_files = {}
     if 'json' in output_formats:
@@ -352,10 +349,10 @@ def transcribe_and_align_audio(file_contents: bytes, language: str, output_forma
     print(f"Starting alignment")
     model_a, metadata = whisperx.load_align_model(language_code=result["language"], device=device)
     aligned_result = whisperx.align(all_transcriptions, model_a, metadata,
-                           temp_audio_file_path, device,
-                           return_char_alignments=False)
+                                    temp_audio_file_path, device,
+                                    return_char_alignments=False)
 
-    # Save aligned JSON 
+    # Save aligned JSON
     if 'align' in output_formats:
         aligned_json_path = os.path.join("output", f"aligned_{microtime}.json")
         with open(aligned_json_path, "w") as f:
@@ -366,7 +363,7 @@ def transcribe_and_align_audio(file_contents: bytes, language: str, output_forma
     # Diarization
     if 'diarize' in output_formats:
         print("Starting diarization")
-        hf_api_token = os.getenv("HF_API_TOKEN")
+        hf_api_token = HF_AUTH_TOKEN
         if not hf_api_token:
             raise ValueError("Hugging Face API token not found in environment variables.")
         diarize_model = whisperx.DiarizationPipeline(device=device, use_auth_token=hf_api_token)
@@ -377,7 +374,8 @@ def transcribe_and_align_audio(file_contents: bytes, language: str, output_forma
         # Prepare diarization results for JSON
         diarization_results_for_json = []
         for segment in result["segments"]:
-            segment_copy = {key: value for key, value in segment.items() if key not in ["clean_char", "clean_cdx", "clean_wdx"]}
+            segment_copy = {key: value for key, value in segment.items() if
+                            key not in ["clean_char", "clean_cdx", "clean_wdx"]}
             diarization_results_for_json.append(segment_copy)
         diarization_json_path = os.path.join("output", f"diarize_{microtime}.json")
         with open(diarization_json_path, "w") as f:
@@ -400,72 +398,40 @@ def transcribe_and_align_audio(file_contents: bytes, language: str, output_forma
     # Parse VTT to Single Line Latin Char String:
     whisper_vtt_text = parse_webvtt(vtt_path)
     print(f"Whisper VTT Converted To Text: {whisper_vtt_text}")
-    # TODO: Use Levenshtein Distance to calculate difference between TXT and VTT-txt
-    distance_from_whisper = calc_levenshtein_distance(transcription_text, cyrillic_to_latin(whisper_vtt_text))
-    # If Distance From Whisper Is Satisfactory, Return Right Away
-    if distance_from_whisper > transcription_threshold:
-        print(f"Distance between transcription and vtt text is larger than 90, can be returned. Distance: {distance_from_whisper}")
-        full_paths = {key: value.replace('/root/', '') for key, value in output_files.items()}
-        return {
-            'status': 'success',
-            'transcription_file': f'{temp_audio_file_path}_transcription.json',
-            'aligned_transcription_file': aligned_json_path,
-            'other_files': [f'{temp_audio_file_path}_{format}' for format in output_formats if format != 'json'],
-            'full_paths': full_paths
-        }
-    # TODO: If different -> use Gladia and its VTT file
-    else:
+    #for live: distance_from_whisper = calc_levenshtein_distance(transcription_text, cyrillic_to_latin(whisper_vtt_text))
+    distance_from_whisper = 1
+    # If Distance From Whisper Is Not Satisfactory, Use Gladia
+    if distance_from_whisper <= transcription_threshold:
         transcript = transcribe_audio(test_audio_url)
-        gladia_transcript_text = transcript['result']['transcription']['full_transcript'] #Raw Text
+        gladia_transcript_text = transcript['result']['transcription']['full_transcript']  # Raw Text
         distance_from_gladia = calc_levenshtein_distance(transcription_text, cyrillic_to_latin(gladia_transcript_text))
-        #Case: Both whisper and gladia have a lev distance < then acceptable (RETURN THE CLOSER ONE WITH A FLAG)
-        if distance_from_whisper < transcription_threshold and distance_from_gladia < transcription_threshold:
-            full_paths = {key: value.replace('/root/', '') for key, value in output_files.items()}
-            if distance_from_whisper > distance_from_gladia:
-                print("Whisper closer than Gladia, returning Whisper transcription with warning flag")
-            else:
-                print("Gladia Closer Than Whisper, Returning Gladia transcription with warning flag")
-            return {
-                'status': 'success',
-                'transcription_file': f'{temp_audio_file_path}_transcription.json',
-                'aligned_transcription_file': aligned_json_path,
-                'other_files': [f'{temp_audio_file_path}_{format}' for format in output_formats if format != 'json'],
-                'full_paths': full_paths
-            }
+
+        # If Gladia is closer, save its VTT
         if distance_from_gladia > distance_from_whisper:
-            print(f"Whisper distance: {distance_from_whisper}, Gladia Distance: {distance_from_gladia}")
-            print("Returning Gladia transcript")
-            full_paths = {key: value.replace('/root/', '') for key, value in output_files.items()}
-            return {
-                'status': 'success',
-                'transcription_file': f'{temp_audio_file_path}_transcription.json',
-                'aligned_transcription_file': aligned_json_path,
-                'other_files': [f'{temp_audio_file_path}_{format}' for format in output_formats if format != 'json'],
-                'full_paths': full_paths
-            }
-        elif distance_from_whisper > distance_from_gladia:
-            print(f"Whisper distance: {distance_from_whisper}, Gladia Distance: {distance_from_gladia}")
-            print("Returning Whisper transcript")
-            full_paths = {key: value.replace('/root/', '') for key, value in output_files.items()}
-            return {
-                'status': 'success',
-                'transcription_file': f'{temp_audio_file_path}_transcription.json',
-                'aligned_transcription_file': aligned_json_path,
-                'other_files': [f'{temp_audio_file_path}_{format}' for format in output_formats if format != 'json'],
-                'full_paths': full_paths
-            }
+            vtt_path = os.path.join("output", f"subtitles_gladia_{microtime}.vtt")
+            utterances = transcript['result']['transcription']['utterances']  # Get the utterances array
 
+            with open(vtt_path, "w", encoding="utf-8") as f:
+                f.write("WEBVTT\n\n")
+                for utterance in utterances:
+                    start_time = format_timestamp(utterance['start'], is_vtt=True)
+                    end_time = format_timestamp(utterance['end'], is_vtt=True)
+                    f.write(f"{start_time} --> {end_time}\n{utterance['text']}\n\n")
 
+            print(f"Gladia VTT file written to {vtt_path}")
+            output_files['vtt'] = vtt_path
 
+    # Return the final result
     full_paths = {key: value.replace('/root/', '') for key, value in output_files.items()}
 
     return {
         'status': 'success',
         'transcription_file': f'{temp_audio_file_path}_transcription.json',
         'aligned_transcription_file': aligned_json_path,
-        'other_files': [f'{temp_audio_file_path}_{format}' for format in output_formats if format != 'json'],
+        'other_files': [output_files.get(format) for format in output_formats if format != 'json'],
         'full_paths': full_paths
     }
+
 
 def write_vtt(segments, path, language):
     subtitles_processor = SubtitlesProcessor(segments, language)
@@ -478,19 +444,3 @@ def write_vtt(segments, path, language):
             end = format_timestamp(subtitle['end'], is_vtt=True)
             f.write(f"{start} --> {end}\n{subtitle['text']}\n\n")
 
-if __name__ == "__main__":
-    import asyncio
-
-    async def test_transcribe_audio():
-        transcription_request = TranscriptionRequest(
-            file_url=test_audio_url,
-            language="en",
-            output_formats=["json", "align", "vtt"]
-        )
-
-        transcription_request.file_url = str(transcription_request.file_url)
-
-        response = await transcribe_audio_endpoint(transcription_request)
-        print(response)
-
-    asyncio.run(test_transcribe_audio())
