@@ -1,0 +1,3019 @@
+[
+    {
+        "start": 0.329,
+        "end": 2.592,
+        "text": " Krastavac Bacan is from Plastenik, instead of the market.",
+        "words": [
+            {
+                "word": "Krastavac",
+                "start": 0.329,
+                "end": 0.65,
+                "score": 0.391,
+                "speaker": "SPEAKER_03"
+            },
+            {
+                "word": "Bacan",
+                "start": 0.67,
+                "end": 0.81,
+                "score": 0.453,
+                "speaker": "SPEAKER_03"
+            },
+            {
+                "word": "is",
+                "start": 0.85,
+                "end": 0.93,
+                "score": 0.464,
+                "speaker": "SPEAKER_03"
+            },
+            {
+                "word": "from",
+                "start": 0.95,
+                "end": 1.15,
+                "score": 0.537,
+                "speaker": "SPEAKER_03"
+            },
+            {
+                "word": "Plastenik,",
+                "start": 1.17,
+                "end": 1.651,
+                "score": 0.513,
+                "speaker": "SPEAKER_03"
+            },
+            {
+                "word": "instead",
+                "start": 1.831,
+                "end": 2.051,
+                "score": 0.57,
+                "speaker": "SPEAKER_03"
+            },
+            {
+                "word": "of",
+                "start": 2.171,
+                "end": 2.291,
+                "score": 0.604,
+                "speaker": "SPEAKER_03"
+            },
+            {
+                "word": "the",
+                "start": 2.311,
+                "end": 2.391,
+                "score": 0.49,
+                "speaker": "SPEAKER_03"
+            },
+            {
+                "word": "market.",
+                "start": 2.411,
+                "end": 2.592,
+                "score": 0.344,
+                "speaker": "SPEAKER_03"
+            }
+        ],
+        "speaker": "SPEAKER_03"
+    },
+    {
+        "start": 2.612,
+        "end": 3.793,
+        "text": "Bacan is made for our buyers.",
+        "words": [
+            {
+                "word": "Bacan",
+                "start": 2.612,
+                "end": 2.912,
+                "score": 0.689,
+                "speaker": "SPEAKER_03"
+            },
+            {
+                "word": "is",
+                "start": 2.932,
+                "end": 2.972,
+                "score": 0.0,
+                "speaker": "SPEAKER_03"
+            },
+            {
+                "word": "made",
+                "start": 2.992,
+                "end": 3.152,
+                "score": 0.349,
+                "speaker": "SPEAKER_03"
+            },
+            {
+                "word": "for",
+                "start": 3.172,
+                "end": 3.252,
+                "score": 0.166,
+                "speaker": "SPEAKER_03"
+            },
+            {
+                "word": "our",
+                "start": 3.272,
+                "end": 3.352,
+                "score": 0.165,
+                "speaker": "SPEAKER_03"
+            },
+            {
+                "word": "buyers.",
+                "start": 3.593,
+                "end": 3.793,
+                "score": 0.235,
+                "speaker": "SPEAKER_02"
+            }
+        ],
+        "speaker": "SPEAKER_03"
+    },
+    {
+        "start": 3.813,
+        "end": 8.478,
+        "text": "There are other vegetables on the unseen hills.",
+        "words": [
+            {
+                "word": "There",
+                "start": 3.813,
+                "end": 4.093,
+                "score": 0.587,
+                "speaker": "SPEAKER_02"
+            },
+            {
+                "word": "are",
+                "start": 4.193,
+                "end": 4.514,
+                "score": 0.813,
+                "speaker": "SPEAKER_02"
+            },
+            {
+                "word": "other",
+                "start": 4.794,
+                "end": 5.134,
+                "score": 0.567,
+                "speaker": "SPEAKER_02"
+            },
+            {
+                "word": "vegetables",
+                "start": 5.334,
+                "end": 5.835,
+                "score": 0.529,
+                "speaker": "SPEAKER_02"
+            },
+            {
+                "word": "on",
+                "start": 5.855,
+                "end": 6.716,
+                "score": 0.904,
+                "speaker": "SPEAKER_02"
+            },
+            {
+                "word": "the",
+                "start": 6.756,
+                "end": 6.976,
+                "score": 0.478,
+                "speaker": "SPEAKER_02"
+            },
+            {
+                "word": "unseen",
+                "start": 8.057,
+                "end": 8.318,
+                "score": 0.236,
+                "speaker": "SPEAKER_02"
+            },
+            {
+                "word": "hills.",
+                "start": 8.338,
+                "end": 8.478,
+                "score": 0.303,
+                "speaker": "SPEAKER_02"
+            }
+        ],
+        "speaker": "SPEAKER_02"
+    },
+    {
+        "start": 8.498,
+        "end": 11.161,
+        "text": "Since I mainly produce paprika, I mostly sell paprika.",
+        "words": [
+            {
+                "word": "Since",
+                "start": 8.498,
+                "end": 8.818,
+                "score": 0.507,
+                "speaker": "SPEAKER_02"
+            },
+            {
+                "word": "I",
+                "start": 8.858,
+                "end": 8.958,
+                "score": 0.767,
+                "speaker": "SPEAKER_02"
+            },
+            {
+                "word": "mainly",
+                "start": 9.158,
+                "end": 9.379,
+                "score": 0.272,
+                "speaker": "SPEAKER_03"
+            },
+            {
+                "word": "produce",
+                "start": 9.439,
+                "end": 9.699,
+                "score": 0.458,
+                "speaker": "SPEAKER_03"
+            },
+            {
+                "word": "paprika,",
+                "start": 9.719,
+                "end": 10.159,
+                "score": 0.607,
+                "speaker": "SPEAKER_03"
+            },
+            {
+                "word": "I",
+                "start": 10.22,
+                "end": 10.28,
+                "score": 0.564,
+                "speaker": "SPEAKER_03"
+            },
+            {
+                "word": "mostly",
+                "start": 10.3,
+                "end": 10.56,
+                "score": 0.475,
+                "speaker": "SPEAKER_03"
+            },
+            {
+                "word": "sell",
+                "start": 10.58,
+                "end": 10.7,
+                "score": 0.166,
+                "speaker": "SPEAKER_03"
+            },
+            {
+                "word": "paprika.",
+                "start": 10.72,
+                "end": 11.161,
+                "score": 0.74,
+                "speaker": "SPEAKER_03"
+            }
+        ],
+        "speaker": "SPEAKER_03"
+    },
+    {
+        "start": 11.241,
+        "end": 16.086,
+        "text": "Manufacturers from the surrounding area asked if the vegetables were thrown away because of the low retail prices.",
+        "words": [
+            {
+                "word": "Manufacturers",
+                "start": 11.241,
+                "end": 11.561,
+                "score": 0.12,
+                "speaker": "SPEAKER_00"
+            },
+            {
+                "word": "from",
+                "start": 11.581,
+                "end": 11.821,
+                "score": 0.514,
+                "speaker": "SPEAKER_00"
+            },
+            {
+                "word": "the",
+                "start": 11.841,
+                "end": 11.961,
+                "score": 0.377,
+                "speaker": "SPEAKER_00"
+            },
+            {
+                "word": "surrounding",
+                "start": 11.981,
+                "end": 12.382,
+                "score": 0.477,
+                "speaker": "SPEAKER_00"
+            },
+            {
+                "word": "area",
+                "start": 12.502,
+                "end": 12.642,
+                "score": 0.409,
+                "speaker": "SPEAKER_00"
+            },
+            {
+                "word": "asked",
+                "start": 12.702,
+                "end": 12.962,
+                "score": 0.417,
+                "speaker": "SPEAKER_00"
+            },
+            {
+                "word": "if",
+                "start": 13.002,
+                "end": 13.042,
+                "score": 0.005,
+                "speaker": "SPEAKER_00"
+            },
+            {
+                "word": "the",
+                "start": 13.062,
+                "end": 13.163,
+                "score": 0.202,
+                "speaker": "SPEAKER_00"
+            },
+            {
+                "word": "vegetables",
+                "start": 13.183,
+                "end": 13.543,
+                "score": 0.224,
+                "speaker": "SPEAKER_00"
+            },
+            {
+                "word": "were",
+                "start": 13.583,
+                "end": 13.743,
+                "score": 0.383,
+                "speaker": "SPEAKER_00"
+            },
+            {
+                "word": "thrown",
+                "start": 13.763,
+                "end": 14.003,
+                "score": 0.312,
+                "speaker": "SPEAKER_00"
+            },
+            {
+                "word": "away",
+                "start": 14.023,
+                "end": 14.164,
+                "score": 0.262,
+                "speaker": "SPEAKER_00"
+            },
+            {
+                "word": "because",
+                "start": 14.784,
+                "end": 14.984,
+                "score": 0.264,
+                "speaker": "SPEAKER_00"
+            },
+            {
+                "word": "of",
+                "start": 15.004,
+                "end": 15.045,
+                "score": 0.094,
+                "speaker": "SPEAKER_00"
+            },
+            {
+                "word": "the",
+                "start": 15.065,
+                "end": 15.145,
+                "score": 0.166,
+                "speaker": "SPEAKER_00"
+            },
+            {
+                "word": "low",
+                "start": 15.185,
+                "end": 15.365,
+                "score": 0.501,
+                "speaker": "SPEAKER_00"
+            },
+            {
+                "word": "retail",
+                "start": 15.385,
+                "end": 15.685,
+                "score": 0.574,
+                "speaker": "SPEAKER_00"
+            },
+            {
+                "word": "prices.",
+                "start": 15.885,
+                "end": 16.086,
+                "score": 0.441,
+                "speaker": "SPEAKER_03"
+            }
+        ],
+        "speaker": "SPEAKER_00"
+    },
+    {
+        "start": 20.848,
+        "end": 24.915,
+        "text": " The first class costed 80 cents, the second costed 40 cents, which would give us a quarter of the price.",
+        "words": [
+            {
+                "word": "The",
+                "start": 20.848,
+                "end": 20.948,
+                "score": 0.233,
+                "speaker": "SPEAKER_00"
+            },
+            {
+                "word": "first",
+                "start": 20.968,
+                "end": 21.108,
+                "score": 0.07,
+                "speaker": "SPEAKER_00"
+            },
+            {
+                "word": "class",
+                "start": 21.128,
+                "end": 21.389,
+                "score": 0.721,
+                "speaker": "SPEAKER_00"
+            },
+            {
+                "word": "costed",
+                "start": 21.409,
+                "end": 21.549,
+                "score": 0.11,
+                "speaker": "SPEAKER_00"
+            },
+            {
+                "word": "80"
+            },
+            {
+                "word": "cents,",
+                "start": 21.589,
+                "end": 21.77,
+                "score": 0.157,
+                "speaker": "SPEAKER_00"
+            },
+            {
+                "word": "the",
+                "start": 21.79,
+                "end": 21.91,
+                "score": 0.34,
+                "speaker": "SPEAKER_00"
+            },
+            {
+                "word": "second",
+                "start": 21.93,
+                "end": 22.09,
+                "score": 0.435,
+                "speaker": "SPEAKER_00"
+            },
+            {
+                "word": "costed",
+                "start": 22.11,
+                "end": 22.431,
+                "score": 0.514,
+                "speaker": "SPEAKER_00"
+            },
+            {
+                "word": "40"
+            },
+            {
+                "word": "cents,",
+                "start": 22.471,
+                "end": 22.811,
+                "score": 0.705,
+                "speaker": "SPEAKER_00"
+            },
+            {
+                "word": "which",
+                "start": 22.831,
+                "end": 23.192,
+                "score": 0.494,
+                "speaker": "SPEAKER_00"
+            },
+            {
+                "word": "would",
+                "start": 23.212,
+                "end": 23.392,
+                "score": 0.264,
+                "speaker": "SPEAKER_00"
+            },
+            {
+                "word": "give",
+                "start": 23.653,
+                "end": 23.773,
+                "score": 0.241,
+                "speaker": "SPEAKER_00"
+            },
+            {
+                "word": "us",
+                "start": 23.793,
+                "end": 23.873,
+                "score": 0.325,
+                "speaker": "SPEAKER_00"
+            },
+            {
+                "word": "a",
+                "start": 23.913,
+                "end": 23.973,
+                "score": 0.917,
+                "speaker": "SPEAKER_00"
+            },
+            {
+                "word": "quarter",
+                "start": 24.013,
+                "end": 24.334,
+                "score": 0.418,
+                "speaker": "SPEAKER_00"
+            },
+            {
+                "word": "of",
+                "start": 24.434,
+                "end": 24.514,
+                "score": 0.268,
+                "speaker": "SPEAKER_00"
+            },
+            {
+                "word": "the",
+                "start": 24.534,
+                "end": 24.734,
+                "score": 0.392,
+                "speaker": "SPEAKER_00"
+            },
+            {
+                "word": "price.",
+                "start": 24.754,
+                "end": 24.915,
+                "score": 0.477,
+                "speaker": "SPEAKER_00"
+            }
+        ],
+        "speaker": "SPEAKER_00"
+    },
+    {
+        "start": 24.935,
+        "end": 30.263,
+        "text": "At that price, it is literally impossible to produce paprika, let alone harvest it.",
+        "words": [
+            {
+                "word": "At",
+                "start": 24.935,
+                "end": 24.975,
+                "score": 0.193,
+                "speaker": "SPEAKER_00"
+            },
+            {
+                "word": "that",
+                "start": 24.995,
+                "end": 25.095,
+                "score": 0.36,
+                "speaker": "SPEAKER_00"
+            },
+            {
+                "word": "price,",
+                "start": 25.115,
+                "end": 25.315,
+                "score": 0.3,
+                "speaker": "SPEAKER_00"
+            },
+            {
+                "word": "it",
+                "start": 25.355,
+                "end": 25.416,
+                "score": 0.636,
+                "speaker": "SPEAKER_00"
+            },
+            {
+                "word": "is",
+                "start": 25.436,
+                "end": 25.476,
+                "score": 0.222,
+                "speaker": "SPEAKER_00"
+            },
+            {
+                "word": "literally",
+                "start": 25.556,
+                "end": 26.818,
+                "score": 0.62,
+                "speaker": "SPEAKER_00"
+            },
+            {
+                "word": "impossible",
+                "start": 26.918,
+                "end": 27.539,
+                "score": 0.409,
+                "speaker": "SPEAKER_00"
+            },
+            {
+                "word": "to",
+                "start": 27.559,
+                "end": 27.679,
+                "score": 0.748,
+                "speaker": "SPEAKER_00"
+            },
+            {
+                "word": "produce",
+                "start": 27.699,
+                "end": 28.42,
+                "score": 0.584,
+                "speaker": "SPEAKER_00"
+            },
+            {
+                "word": "paprika,",
+                "start": 28.701,
+                "end": 29.142,
+                "score": 0.579,
+                "speaker": "SPEAKER_00"
+            },
+            {
+                "word": "let",
+                "start": 29.162,
+                "end": 29.302,
+                "score": 0.406,
+                "speaker": "SPEAKER_00"
+            },
+            {
+                "word": "alone",
+                "start": 29.382,
+                "end": 29.763,
+                "score": 0.83,
+                "speaker": "SPEAKER_00"
+            },
+            {
+                "word": "harvest",
+                "start": 29.863,
+                "end": 30.203,
+                "score": 0.37,
+                "speaker": "SPEAKER_00"
+            },
+            {
+                "word": "it.",
+                "start": 30.223,
+                "end": 30.263,
+                "score": 0.438,
+                "speaker": "SPEAKER_00"
+            }
+        ],
+        "speaker": "SPEAKER_00"
+    },
+    {
+        "start": 36.323,
+        "end": 39.604,
+        "text": " We, with 20 or 25 cents, can't bargain with anyone.",
+        "words": [
+            {
+                "word": "We,",
+                "start": 36.323,
+                "end": 36.443,
+                "score": 0.465,
+                "speaker": "SPEAKER_00"
+            },
+            {
+                "word": "with",
+                "start": 36.463,
+                "end": 36.803,
+                "score": 0.68,
+                "speaker": "SPEAKER_00"
+            },
+            {
+                "word": "20"
+            },
+            {
+                "word": "or",
+                "start": 36.983,
+                "end": 37.063,
+                "score": 0.51,
+                "speaker": "SPEAKER_00"
+            },
+            {
+                "word": "25"
+            },
+            {
+                "word": "cents,",
+                "start": 37.123,
+                "end": 38.164,
+                "score": 0.724,
+                "speaker": "SPEAKER_02"
+            },
+            {
+                "word": "can't",
+                "start": 38.224,
+                "end": 38.764,
+                "score": 0.774,
+                "speaker": "SPEAKER_02"
+            },
+            {
+                "word": "bargain",
+                "start": 38.804,
+                "end": 39.144,
+                "score": 0.424,
+                "speaker": "SPEAKER_02"
+            },
+            {
+                "word": "with",
+                "start": 39.164,
+                "end": 39.384,
+                "score": 0.704,
+                "speaker": "SPEAKER_02"
+            },
+            {
+                "word": "anyone.",
+                "start": 39.404,
+                "end": 39.604,
+                "score": 0.246,
+                "speaker": "SPEAKER_02"
+            }
+        ],
+        "speaker": "SPEAKER_02"
+    },
+    {
+        "start": 39.644,
+        "end": 42.425,
+        "text": "Pick up a ton of cucumbers for 200 euros.",
+        "words": [
+            {
+                "word": "Pick",
+                "start": 39.644,
+                "end": 39.844,
+                "score": 0.608,
+                "speaker": "SPEAKER_02"
+            },
+            {
+                "word": "up",
+                "start": 39.864,
+                "end": 40.124,
+                "score": 0.627,
+                "speaker": "SPEAKER_02"
+            },
+            {
+                "word": "a",
+                "start": 40.224,
+                "end": 40.404,
+                "score": 0.612,
+                "speaker": "SPEAKER_02"
+            },
+            {
+                "word": "ton",
+                "start": 40.444,
+                "end": 41.545,
+                "score": 0.876,
+                "speaker": "SPEAKER_02"
+            },
+            {
+                "word": "of",
+                "start": 41.605,
+                "end": 41.665,
+                "score": 0.429,
+                "speaker": "SPEAKER_02"
+            },
+            {
+                "word": "cucumbers",
+                "start": 41.685,
+                "end": 41.965,
+                "score": 0.307,
+                "speaker": "SPEAKER_02"
+            },
+            {
+                "word": "for",
+                "start": 42.005,
+                "end": 42.185,
+                "score": 0.71,
+                "speaker": "SPEAKER_02"
+            },
+            {
+                "word": "200"
+            },
+            {
+                "word": "euros.",
+                "start": 42.265,
+                "end": 42.425,
+                "score": 0.366,
+                "speaker": "SPEAKER_02"
+            }
+        ],
+        "speaker": "SPEAKER_02"
+    },
+    {
+        "start": 42.445,
+        "end": 43.426,
+        "text": "So, where's the water?",
+        "words": [
+            {
+                "word": "So,",
+                "start": 42.445,
+                "end": 42.485,
+                "score": 0.003,
+                "speaker": "SPEAKER_02"
+            },
+            {
+                "word": "where's",
+                "start": 42.585,
+                "end": 42.805,
+                "score": 0.31,
+                "speaker": "SPEAKER_02"
+            },
+            {
+                "word": "the",
+                "start": 42.845,
+                "end": 43.165,
+                "score": 0.68,
+                "speaker": "SPEAKER_02"
+            },
+            {
+                "word": "water?",
+                "start": 43.266,
+                "end": 43.426,
+                "score": 0.218,
+                "speaker": "SPEAKER_02"
+            }
+        ],
+        "speaker": "SPEAKER_02"
+    },
+    {
+        "start": 43.466,
+        "end": 44.206,
+        "text": "Where's the food?",
+        "words": [
+            {
+                "word": "Where's",
+                "start": 43.466,
+                "end": 43.706,
+                "score": 0.347,
+                "speaker": "SPEAKER_02"
+            },
+            {
+                "word": "the",
+                "start": 43.726,
+                "end": 43.846,
+                "score": 0.666,
+                "speaker": "SPEAKER_02"
+            },
+            {
+                "word": "food?",
+                "start": 43.866,
+                "end": 44.206,
+                "score": 0.53,
+                "speaker": "SPEAKER_02"
+            }
+        ],
+        "speaker": "SPEAKER_02"
+    },
+    {
+        "start": 44.226,
+        "end": 45.066,
+        "text": "Where are the workers?",
+        "words": [
+            {
+                "word": "Where",
+                "start": 44.226,
+                "end": 44.326,
+                "score": 0.186,
+                "speaker": "SPEAKER_02"
+            },
+            {
+                "word": "are",
+                "start": 44.366,
+                "end": 44.526,
+                "score": 0.641,
+                "speaker": "SPEAKER_02"
+            },
+            {
+                "word": "the",
+                "start": 44.546,
+                "end": 44.666,
+                "score": 0.667,
+                "speaker": "SPEAKER_02"
+            },
+            {
+                "word": "workers?",
+                "start": 44.686,
+                "end": 45.066,
+                "score": 0.452,
+                "speaker": "SPEAKER_02"
+            }
+        ],
+        "speaker": "SPEAKER_02"
+    },
+    {
+        "start": 45.546,
+        "end": 46.167,
+        "text": "Where are we?",
+        "words": [
+            {
+                "word": "Where",
+                "start": 45.546,
+                "end": 45.746,
+                "score": 0.384,
+                "speaker": "SPEAKER_02"
+            },
+            {
+                "word": "are",
+                "start": 45.886,
+                "end": 45.946,
+                "score": 0.04,
+                "speaker": "SPEAKER_02"
+            },
+            {
+                "word": "we?",
+                "start": 45.966,
+                "end": 46.167,
+                "score": 0.666,
+                "speaker": "SPEAKER_02"
+            }
+        ],
+        "speaker": "SPEAKER_02"
+    },
+    {
+        "start": 46.207,
+        "end": 48.407,
+        "text": "The income and expenses explain it all.",
+        "words": [
+            {
+                "word": "The",
+                "start": 46.207,
+                "end": 46.307,
+                "score": 0.376,
+                "speaker": "SPEAKER_02"
+            },
+            {
+                "word": "income",
+                "start": 46.367,
+                "end": 46.607,
+                "score": 0.335,
+                "speaker": "SPEAKER_02"
+            },
+            {
+                "word": "and",
+                "start": 46.927,
+                "end": 47.007,
+                "score": 0.335,
+                "speaker": "SPEAKER_02"
+            },
+            {
+                "word": "expenses",
+                "start": 47.367,
+                "end": 47.607,
+                "score": 0.199,
+                "speaker": "SPEAKER_02"
+            },
+            {
+                "word": "explain",
+                "start": 47.667,
+                "end": 48.087,
+                "score": 0.482,
+                "speaker": "SPEAKER_02"
+            },
+            {
+                "word": "it",
+                "start": 48.107,
+                "end": 48.227,
+                "score": 0.272,
+                "speaker": "SPEAKER_02"
+            },
+            {
+                "word": "all.",
+                "start": 48.327,
+                "end": 48.407,
+                "score": 0.21,
+                "speaker": "SPEAKER_02"
+            }
+        ],
+        "speaker": "SPEAKER_02"
+    },
+    {
+        "start": 48.427,
+        "end": 52.089,
+        "text": "The harvest is almost equal to that of an engineer.",
+        "words": [
+            {
+                "word": "The",
+                "start": 48.427,
+                "end": 48.607,
+                "score": 0.627,
+                "speaker": "SPEAKER_02"
+            },
+            {
+                "word": "harvest",
+                "start": 49.708,
+                "end": 50.048,
+                "score": 0.327,
+                "speaker": "SPEAKER_02"
+            },
+            {
+                "word": "is",
+                "start": 50.188,
+                "end": 50.308,
+                "score": 0.561,
+                "speaker": "SPEAKER_02"
+            },
+            {
+                "word": "almost",
+                "start": 50.328,
+                "end": 50.528,
+                "score": 0.308,
+                "speaker": "SPEAKER_02"
+            },
+            {
+                "word": "equal",
+                "start": 50.568,
+                "end": 50.688,
+                "score": 0.127,
+                "speaker": "SPEAKER_02"
+            },
+            {
+                "word": "to",
+                "start": 51.068,
+                "end": 51.248,
+                "score": 0.638,
+                "speaker": "SPEAKER_02"
+            },
+            {
+                "word": "that",
+                "start": 51.308,
+                "end": 51.408,
+                "score": 0.363,
+                "speaker": "SPEAKER_02"
+            },
+            {
+                "word": "of",
+                "start": 51.428,
+                "end": 51.468,
+                "score": 0.0,
+                "speaker": "SPEAKER_02"
+            },
+            {
+                "word": "an",
+                "start": 51.549,
+                "end": 51.669,
+                "score": 0.457,
+                "speaker": "SPEAKER_02"
+            },
+            {
+                "word": "engineer.",
+                "start": 51.689,
+                "end": 52.089,
+                "score": 0.536,
+                "speaker": "SPEAKER_02"
+            }
+        ],
+        "speaker": "SPEAKER_02"
+    },
+    {
+        "start": 52.549,
+        "end": 54.35,
+        "text": "The total price does not cover it.",
+        "words": [
+            {
+                "word": "The",
+                "start": 52.549,
+                "end": 52.689,
+                "score": 0.526,
+                "speaker": "SPEAKER_02"
+            },
+            {
+                "word": "total",
+                "start": 52.749,
+                "end": 53.149,
+                "score": 0.726,
+                "speaker": "SPEAKER_02"
+            },
+            {
+                "word": "price",
+                "start": 53.249,
+                "end": 53.809,
+                "score": 0.496,
+                "speaker": "SPEAKER_03"
+            },
+            {
+                "word": "does",
+                "start": 53.849,
+                "end": 53.969,
+                "score": 0.628,
+                "speaker": "SPEAKER_03"
+            },
+            {
+                "word": "not",
+                "start": 53.989,
+                "end": 54.049,
+                "score": 0.538,
+                "speaker": "SPEAKER_03"
+            },
+            {
+                "word": "cover",
+                "start": 54.069,
+                "end": 54.29,
+                "score": 0.269,
+                "speaker": "SPEAKER_03"
+            },
+            {
+                "word": "it.",
+                "start": 54.31,
+                "end": 54.35,
+                "score": 0.479,
+                "speaker": "SPEAKER_03"
+            }
+        ],
+        "speaker": "SPEAKER_03"
+    },
+    {
+        "start": 61.653,
+        "end": 63.834,
+        "text": " So far, I have thrown 8 to 10 tons.",
+        "words": [
+            {
+                "word": "So",
+                "start": 61.653,
+                "end": 61.773,
+                "score": 0.637,
+                "speaker": "SPEAKER_02"
+            },
+            {
+                "word": "far,",
+                "start": 61.813,
+                "end": 62.053,
+                "score": 0.613,
+                "speaker": "SPEAKER_02"
+            },
+            {
+                "word": "I",
+                "start": 62.113,
+                "end": 62.193,
+                "score": 0.491,
+                "speaker": "SPEAKER_02"
+            },
+            {
+                "word": "have",
+                "start": 62.213,
+                "end": 62.373,
+                "score": 0.441,
+                "speaker": "SPEAKER_02"
+            },
+            {
+                "word": "thrown",
+                "start": 62.393,
+                "end": 62.713,
+                "score": 0.418,
+                "speaker": "SPEAKER_02"
+            },
+            {
+                "word": "8"
+            },
+            {
+                "word": "to",
+                "start": 62.753,
+                "end": 62.993,
+                "score": 0.787,
+                "speaker": "SPEAKER_02"
+            },
+            {
+                "word": "10"
+            },
+            {
+                "word": "tons.",
+                "start": 63.573,
+                "end": 63.834,
+                "score": 0.522,
+                "speaker": "SPEAKER_02"
+            }
+        ],
+        "speaker": "SPEAKER_02"
+    },
+    {
+        "start": 64.034,
+        "end": 65.694,
+        "text": "I felt like I was crying.",
+        "words": [
+            {
+                "word": "I",
+                "start": 64.034,
+                "end": 64.134,
+                "score": 0.761,
+                "speaker": "SPEAKER_02"
+            },
+            {
+                "word": "felt",
+                "start": 64.214,
+                "end": 64.354,
+                "score": 0.261,
+                "speaker": "SPEAKER_02"
+            },
+            {
+                "word": "like",
+                "start": 64.374,
+                "end": 64.714,
+                "score": 0.578,
+                "speaker": "SPEAKER_02"
+            },
+            {
+                "word": "I",
+                "start": 65.094,
+                "end": 65.234,
+                "score": 0.439,
+                "speaker": "SPEAKER_02"
+            },
+            {
+                "word": "was",
+                "start": 65.314,
+                "end": 65.494,
+                "score": 0.62,
+                "speaker": "SPEAKER_02"
+            },
+            {
+                "word": "crying.",
+                "start": 65.534,
+                "end": 65.694,
+                "score": 0.195,
+                "speaker": "SPEAKER_02"
+            }
+        ],
+        "speaker": "SPEAKER_02"
+    },
+    {
+        "start": 65.714,
+        "end": 68.855,
+        "text": "The total prices have now grown, so the throwing has stopped.",
+        "words": [
+            {
+                "word": "The",
+                "start": 65.714,
+                "end": 65.834,
+                "score": 0.39,
+                "speaker": "SPEAKER_02"
+            },
+            {
+                "word": "total",
+                "start": 65.854,
+                "end": 66.174,
+                "score": 0.363,
+                "speaker": "SPEAKER_02"
+            },
+            {
+                "word": "prices",
+                "start": 66.254,
+                "end": 66.394,
+                "score": 0.142,
+                "speaker": "SPEAKER_02"
+            },
+            {
+                "word": "have",
+                "start": 66.414,
+                "end": 66.714,
+                "score": 0.575,
+                "speaker": "SPEAKER_02"
+            },
+            {
+                "word": "now",
+                "start": 66.754,
+                "end": 66.834,
+                "score": 0.191,
+                "speaker": "SPEAKER_02"
+            },
+            {
+                "word": "grown,",
+                "start": 66.854,
+                "end": 67.214,
+                "score": 0.683,
+                "speaker": "SPEAKER_02"
+            },
+            {
+                "word": "so",
+                "start": 67.234,
+                "end": 67.274,
+                "score": 0.001,
+                "speaker": "SPEAKER_02"
+            },
+            {
+                "word": "the",
+                "start": 67.935,
+                "end": 68.015,
+                "score": 0.268,
+                "speaker": "SPEAKER_02"
+            },
+            {
+                "word": "throwing",
+                "start": 68.055,
+                "end": 68.335,
+                "score": 0.273,
+                "speaker": "SPEAKER_02"
+            },
+            {
+                "word": "has",
+                "start": 68.415,
+                "end": 68.655,
+                "score": 0.703,
+                "speaker": "SPEAKER_02"
+            },
+            {
+                "word": "stopped.",
+                "start": 68.675,
+                "end": 68.855,
+                "score": 0.218,
+                "speaker": "SPEAKER_02"
+            }
+        ],
+        "speaker": "SPEAKER_02"
+    },
+    {
+        "start": 68.975,
+        "end": 72.556,
+        "text": "But the question is until when, because the market is not stable.",
+        "words": [
+            {
+                "word": "But",
+                "start": 68.975,
+                "end": 69.195,
+                "score": 0.496,
+                "speaker": "SPEAKER_02"
+            },
+            {
+                "word": "the",
+                "start": 69.215,
+                "end": 69.375,
+                "score": 0.507,
+                "speaker": "SPEAKER_02"
+            },
+            {
+                "word": "question",
+                "start": 69.675,
+                "end": 70.195,
+                "score": 0.451,
+                "speaker": "SPEAKER_03"
+            },
+            {
+                "word": "is",
+                "start": 70.235,
+                "end": 70.315,
+                "score": 0.693,
+                "speaker": "SPEAKER_03"
+            },
+            {
+                "word": "until",
+                "start": 70.375,
+                "end": 70.555,
+                "score": 0.176,
+                "speaker": "SPEAKER_03"
+            },
+            {
+                "word": "when,",
+                "start": 70.575,
+                "end": 70.715,
+                "score": 0.359,
+                "speaker": "SPEAKER_03"
+            },
+            {
+                "word": "because",
+                "start": 70.735,
+                "end": 71.055,
+                "score": 0.432,
+                "speaker": "SPEAKER_03"
+            },
+            {
+                "word": "the",
+                "start": 71.075,
+                "end": 71.155,
+                "score": 0.48,
+                "speaker": "SPEAKER_03"
+            },
+            {
+                "word": "market",
+                "start": 71.175,
+                "end": 71.675,
+                "score": 0.583,
+                "speaker": "SPEAKER_03"
+            },
+            {
+                "word": "is",
+                "start": 71.735,
+                "end": 72.036,
+                "score": 0.624,
+                "speaker": "SPEAKER_03"
+            },
+            {
+                "word": "not",
+                "start": 72.096,
+                "end": 72.256,
+                "score": 0.327,
+                "speaker": "SPEAKER_03"
+            },
+            {
+                "word": "stable.",
+                "start": 72.276,
+                "end": 72.556,
+                "score": 0.837,
+                "speaker": "SPEAKER_03"
+            }
+        ],
+        "speaker": "SPEAKER_03"
+    },
+    {
+        "start": 72.576,
+        "end": 77.177,
+        "text": "We are in front of the area where in the spring the cabbage grew, which we unfortunately had to plow.",
+        "words": [
+            {
+                "word": "We",
+                "start": 72.576,
+                "end": 72.636,
+                "score": 0.242,
+                "speaker": "SPEAKER_03"
+            },
+            {
+                "word": "are",
+                "start": 72.796,
+                "end": 72.976,
+                "score": 0.639,
+                "speaker": "SPEAKER_03"
+            },
+            {
+                "word": "in",
+                "start": 73.036,
+                "end": 73.076,
+                "score": 0.296,
+                "speaker": "SPEAKER_03"
+            },
+            {
+                "word": "front",
+                "start": 73.096,
+                "end": 73.236,
+                "score": 0.421,
+                "speaker": "SPEAKER_03"
+            },
+            {
+                "word": "of",
+                "start": 73.276,
+                "end": 73.336,
+                "score": 0.46,
+                "speaker": "SPEAKER_03"
+            },
+            {
+                "word": "the",
+                "start": 73.376,
+                "end": 73.456,
+                "score": 0.404,
+                "speaker": "SPEAKER_03"
+            },
+            {
+                "word": "area",
+                "start": 73.576,
+                "end": 73.996,
+                "score": 0.71,
+                "speaker": "SPEAKER_03"
+            },
+            {
+                "word": "where",
+                "start": 74.056,
+                "end": 74.156,
+                "score": 0.222,
+                "speaker": "SPEAKER_03"
+            },
+            {
+                "word": "in",
+                "start": 74.196,
+                "end": 74.236,
+                "score": 0.019,
+                "speaker": "SPEAKER_03"
+            },
+            {
+                "word": "the",
+                "start": 74.256,
+                "end": 74.356,
+                "score": 0.387,
+                "speaker": "SPEAKER_03"
+            },
+            {
+                "word": "spring",
+                "start": 74.376,
+                "end": 74.676,
+                "score": 0.432,
+                "speaker": "SPEAKER_03"
+            },
+            {
+                "word": "the",
+                "start": 74.696,
+                "end": 74.776,
+                "score": 0.208,
+                "speaker": "SPEAKER_03"
+            },
+            {
+                "word": "cabbage",
+                "start": 74.836,
+                "end": 75.336,
+                "score": 0.73,
+                "speaker": "SPEAKER_03"
+            },
+            {
+                "word": "grew,",
+                "start": 75.516,
+                "end": 75.736,
+                "score": 0.406,
+                "speaker": "SPEAKER_01"
+            },
+            {
+                "word": "which",
+                "start": 75.756,
+                "end": 75.857,
+                "score": 0.021,
+                "speaker": "SPEAKER_01"
+            },
+            {
+                "word": "we",
+                "start": 75.877,
+                "end": 75.977,
+                "score": 0.808,
+                "speaker": "SPEAKER_01"
+            },
+            {
+                "word": "unfortunately",
+                "start": 76.037,
+                "end": 76.657,
+                "score": 0.429,
+                "speaker": "SPEAKER_01"
+            },
+            {
+                "word": "had",
+                "start": 76.697,
+                "end": 76.837,
+                "score": 0.439,
+                "speaker": "SPEAKER_01"
+            },
+            {
+                "word": "to",
+                "start": 76.857,
+                "end": 76.897,
+                "score": 0.005,
+                "speaker": "SPEAKER_01"
+            },
+            {
+                "word": "plow.",
+                "start": 76.957,
+                "end": 77.177,
+                "score": 0.694,
+                "speaker": "SPEAKER_01"
+            }
+        ],
+        "speaker": "SPEAKER_03"
+    },
+    {
+        "start": 77.197,
+        "end": 79.797,
+        "text": "The offered price was 17 cents, on which we could not do our consumption production.",
+        "words": [
+            {
+                "word": "The",
+                "start": 77.197,
+                "end": 77.257,
+                "score": 0.136,
+                "speaker": "SPEAKER_01"
+            },
+            {
+                "word": "offered",
+                "start": 77.277,
+                "end": 77.597,
+                "score": 0.335,
+                "speaker": "SPEAKER_01"
+            },
+            {
+                "word": "price",
+                "start": 77.677,
+                "end": 77.917,
+                "score": 0.643,
+                "speaker": "SPEAKER_01"
+            },
+            {
+                "word": "was",
+                "start": 77.937,
+                "end": 78.197,
+                "score": 0.67,
+                "speaker": "SPEAKER_01"
+            },
+            {
+                "word": "17"
+            },
+            {
+                "word": "cents,",
+                "start": 78.237,
+                "end": 78.337,
+                "score": 0.024,
+                "speaker": "SPEAKER_01"
+            },
+            {
+                "word": "on",
+                "start": 78.377,
+                "end": 78.437,
+                "score": 0.246,
+                "speaker": "SPEAKER_01"
+            },
+            {
+                "word": "which",
+                "start": 78.477,
+                "end": 78.577,
+                "score": 0.016,
+                "speaker": "SPEAKER_01"
+            },
+            {
+                "word": "we",
+                "start": 78.617,
+                "end": 78.657,
+                "score": 0.016,
+                "speaker": "SPEAKER_01"
+            },
+            {
+                "word": "could",
+                "start": 78.677,
+                "end": 78.857,
+                "score": 0.465,
+                "speaker": "SPEAKER_01"
+            },
+            {
+                "word": "not",
+                "start": 78.877,
+                "end": 78.937,
+                "score": 0.255,
+                "speaker": "SPEAKER_01"
+            },
+            {
+                "word": "do",
+                "start": 78.957,
+                "end": 79.037,
+                "score": 0.434,
+                "speaker": "SPEAKER_01"
+            },
+            {
+                "word": "our",
+                "start": 79.097,
+                "end": 79.177,
+                "score": 0.401,
+                "speaker": "SPEAKER_01"
+            },
+            {
+                "word": "consumption",
+                "start": 79.197,
+                "end": 79.517,
+                "score": 0.241,
+                "speaker": "SPEAKER_01"
+            },
+            {
+                "word": "production.",
+                "start": 79.537,
+                "end": 79.797,
+                "score": 0.276,
+                "speaker": "SPEAKER_01"
+            }
+        ],
+        "speaker": "SPEAKER_01"
+    },
+    {
+        "start": 79.817,
+        "end": 82.718,
+        "text": "Desperate farmers are asking for the protection of the state.",
+        "words": [
+            {
+                "word": "Desperate",
+                "start": 79.817,
+                "end": 80.078,
+                "score": 0.219,
+                "speaker": "SPEAKER_01"
+            },
+            {
+                "word": "farmers",
+                "start": 80.098,
+                "end": 80.418,
+                "score": 0.399,
+                "speaker": "SPEAKER_01"
+            },
+            {
+                "word": "are",
+                "start": 80.438,
+                "end": 80.658,
+                "score": 0.707,
+                "speaker": "SPEAKER_01"
+            },
+            {
+                "word": "asking",
+                "start": 80.678,
+                "end": 81.438,
+                "score": 0.621,
+                "speaker": "SPEAKER_01"
+            },
+            {
+                "word": "for",
+                "start": 81.458,
+                "end": 81.578,
+                "score": 0.344,
+                "speaker": "SPEAKER_01"
+            },
+            {
+                "word": "the",
+                "start": 81.618,
+                "end": 81.778,
+                "score": 0.871,
+                "speaker": "SPEAKER_01"
+            },
+            {
+                "word": "protection",
+                "start": 81.898,
+                "end": 82.338,
+                "score": 0.412,
+                "speaker": "SPEAKER_01"
+            },
+            {
+                "word": "of",
+                "start": 82.378,
+                "end": 82.438,
+                "score": 0.18,
+                "speaker": "SPEAKER_01"
+            },
+            {
+                "word": "the",
+                "start": 82.458,
+                "end": 82.518,
+                "score": 0.307,
+                "speaker": "SPEAKER_01"
+            },
+            {
+                "word": "state.",
+                "start": 82.578,
+                "end": 82.718,
+                "score": 0.261,
+                "speaker": "SPEAKER_01"
+            }
+        ],
+        "speaker": "SPEAKER_01"
+    },
+    {
+        "start": 90.22,
+        "end": 97.644,
+        "text": " I, as a producer, can't lose half of it, and someone else has to get rich with my labor and take a euro more.",
+        "words": [
+            {
+                "word": "I,",
+                "start": 90.22,
+                "end": 90.3,
+                "score": 0.573,
+                "speaker": "SPEAKER_02"
+            },
+            {
+                "word": "as",
+                "start": 90.34,
+                "end": 90.54,
+                "score": 0.605,
+                "speaker": "SPEAKER_02"
+            },
+            {
+                "word": "a",
+                "start": 90.62,
+                "end": 90.72,
+                "score": 0.656,
+                "speaker": "SPEAKER_02"
+            },
+            {
+                "word": "producer,",
+                "start": 91.021,
+                "end": 91.461,
+                "score": 0.514,
+                "speaker": "SPEAKER_02"
+            },
+            {
+                "word": "can't",
+                "start": 91.481,
+                "end": 91.781,
+                "score": 0.526,
+                "speaker": "SPEAKER_02"
+            },
+            {
+                "word": "lose",
+                "start": 92.201,
+                "end": 92.581,
+                "score": 0.701,
+                "speaker": "SPEAKER_02"
+            },
+            {
+                "word": "half",
+                "start": 92.661,
+                "end": 92.922,
+                "score": 0.678,
+                "speaker": "SPEAKER_02"
+            },
+            {
+                "word": "of",
+                "start": 92.962,
+                "end": 93.002,
+                "score": 0.043,
+                "speaker": "SPEAKER_02"
+            },
+            {
+                "word": "it,",
+                "start": 93.022,
+                "end": 93.062,
+                "score": 0.0,
+                "speaker": "SPEAKER_02"
+            },
+            {
+                "word": "and",
+                "start": 93.542,
+                "end": 93.602,
+                "score": 0.433,
+                "speaker": "SPEAKER_02"
+            },
+            {
+                "word": "someone",
+                "start": 93.622,
+                "end": 93.962,
+                "score": 0.298,
+                "speaker": "SPEAKER_02"
+            },
+            {
+                "word": "else",
+                "start": 94.082,
+                "end": 94.202,
+                "score": 0.29,
+                "speaker": "SPEAKER_02"
+            },
+            {
+                "word": "has",
+                "start": 94.643,
+                "end": 94.723,
+                "score": 0.187,
+                "speaker": "SPEAKER_02"
+            },
+            {
+                "word": "to",
+                "start": 94.763,
+                "end": 94.883,
+                "score": 0.714,
+                "speaker": "SPEAKER_02"
+            },
+            {
+                "word": "get",
+                "start": 94.903,
+                "end": 95.123,
+                "score": 0.838,
+                "speaker": "SPEAKER_02"
+            },
+            {
+                "word": "rich",
+                "start": 95.163,
+                "end": 95.263,
+                "score": 0.252,
+                "speaker": "SPEAKER_02"
+            },
+            {
+                "word": "with",
+                "start": 95.283,
+                "end": 95.463,
+                "score": 0.27,
+                "speaker": "SPEAKER_02"
+            },
+            {
+                "word": "my",
+                "start": 95.503,
+                "end": 95.683,
+                "score": 0.717,
+                "speaker": "SPEAKER_02"
+            },
+            {
+                "word": "labor",
+                "start": 95.723,
+                "end": 96.244,
+                "score": 0.673,
+                "speaker": "SPEAKER_02"
+            },
+            {
+                "word": "and",
+                "start": 96.564,
+                "end": 96.624,
+                "score": 0.007,
+                "speaker": "SPEAKER_02"
+            },
+            {
+                "word": "take",
+                "start": 96.664,
+                "end": 96.884,
+                "score": 0.47,
+                "speaker": "SPEAKER_02"
+            },
+            {
+                "word": "a",
+                "start": 97.144,
+                "end": 97.164,
+                "score": 0.496,
+                "speaker": "SPEAKER_02"
+            },
+            {
+                "word": "euro",
+                "start": 97.204,
+                "end": 97.484,
+                "score": 0.534,
+                "speaker": "SPEAKER_02"
+            },
+            {
+                "word": "more.",
+                "start": 97.524,
+                "end": 97.644,
+                "score": 0.245,
+                "speaker": "SPEAKER_02"
+            }
+        ],
+        "speaker": "SPEAKER_02"
+    },
+    {
+        "start": 97.885,
+        "end": 103.408,
+        "text": "We don't blame the buyers, who offer us very low prices, because it is clear to us that everyone will buy where it is cheaper.",
+        "words": [
+            {
+                "word": "We",
+                "start": 97.885,
+                "end": 97.945,
+                "score": 0.39,
+                "speaker": "SPEAKER_01"
+            },
+            {
+                "word": "don't",
+                "start": 97.965,
+                "end": 98.125,
+                "score": 0.19,
+                "speaker": "SPEAKER_01"
+            },
+            {
+                "word": "blame",
+                "start": 98.145,
+                "end": 98.385,
+                "score": 0.321,
+                "speaker": "SPEAKER_01"
+            },
+            {
+                "word": "the",
+                "start": 98.405,
+                "end": 98.505,
+                "score": 0.312,
+                "speaker": "SPEAKER_01"
+            },
+            {
+                "word": "buyers,",
+                "start": 98.525,
+                "end": 98.745,
+                "score": 0.3,
+                "speaker": "SPEAKER_01"
+            },
+            {
+                "word": "who",
+                "start": 98.765,
+                "end": 98.825,
+                "score": 0.003,
+                "speaker": "SPEAKER_01"
+            },
+            {
+                "word": "offer",
+                "start": 98.905,
+                "end": 99.225,
+                "score": 0.55,
+                "speaker": "SPEAKER_01"
+            },
+            {
+                "word": "us",
+                "start": 99.345,
+                "end": 99.425,
+                "score": 0.517,
+                "speaker": "SPEAKER_01"
+            },
+            {
+                "word": "very",
+                "start": 99.445,
+                "end": 99.646,
+                "score": 0.224,
+                "speaker": "SPEAKER_01"
+            },
+            {
+                "word": "low",
+                "start": 99.666,
+                "end": 99.786,
+                "score": 0.646,
+                "speaker": "SPEAKER_01"
+            },
+            {
+                "word": "prices,",
+                "start": 99.806,
+                "end": 99.926,
+                "score": 0.116,
+                "speaker": "SPEAKER_01"
+            },
+            {
+                "word": "because",
+                "start": 99.946,
+                "end": 100.186,
+                "score": 0.441,
+                "speaker": "SPEAKER_01"
+            },
+            {
+                "word": "it",
+                "start": 100.226,
+                "end": 100.286,
+                "score": 0.186,
+                "speaker": "SPEAKER_01"
+            },
+            {
+                "word": "is",
+                "start": 100.346,
+                "end": 100.406,
+                "score": 0.95,
+                "speaker": "SPEAKER_01"
+            },
+            {
+                "word": "clear",
+                "start": 100.446,
+                "end": 100.926,
+                "score": 0.421,
+                "speaker": "SPEAKER_01"
+            },
+            {
+                "word": "to",
+                "start": 101.266,
+                "end": 101.427,
+                "score": 0.543,
+                "speaker": "SPEAKER_01"
+            },
+            {
+                "word": "us",
+                "start": 101.527,
+                "end": 101.667,
+                "score": 0.596,
+                "speaker": "SPEAKER_01"
+            },
+            {
+                "word": "that",
+                "start": 101.687,
+                "end": 101.807,
+                "score": 0.233,
+                "speaker": "SPEAKER_01"
+            },
+            {
+                "word": "everyone",
+                "start": 101.847,
+                "end": 102.127,
+                "score": 0.31,
+                "speaker": "SPEAKER_01"
+            },
+            {
+                "word": "will",
+                "start": 102.567,
+                "end": 102.727,
+                "score": 0.392,
+                "speaker": "SPEAKER_01"
+            },
+            {
+                "word": "buy",
+                "start": 102.747,
+                "end": 102.827,
+                "score": 0.195,
+                "speaker": "SPEAKER_01"
+            },
+            {
+                "word": "where",
+                "start": 102.847,
+                "end": 102.967,
+                "score": 0.255,
+                "speaker": "SPEAKER_01"
+            },
+            {
+                "word": "it",
+                "start": 103.067,
+                "end": 103.168,
+                "score": 0.496,
+                "speaker": "SPEAKER_01"
+            },
+            {
+                "word": "is",
+                "start": 103.188,
+                "end": 103.248,
+                "score": 0.283,
+                "speaker": "SPEAKER_01"
+            },
+            {
+                "word": "cheaper.",
+                "start": 103.268,
+                "end": 103.408,
+                "score": 0.073,
+                "speaker": "SPEAKER_01"
+            }
+        ],
+        "speaker": "SPEAKER_01"
+    },
+    {
+        "start": 103.428,
+        "end": 115.735,
+        "text": "But in order to protect domestic production, it is necessary to introduce, as far as I know, from May 1st to October 1st, that is, to prohibit importation, except for the culture, which is insufficient for us.",
+        "words": [
+            {
+                "word": "But",
+                "start": 103.428,
+                "end": 103.628,
+                "score": 0.637,
+                "speaker": "SPEAKER_01"
+            },
+            {
+                "word": "in",
+                "start": 103.668,
+                "end": 103.888,
+                "score": 0.576,
+                "speaker": "SPEAKER_01"
+            },
+            {
+                "word": "order",
+                "start": 104.428,
+                "end": 104.608,
+                "score": 0.299,
+                "speaker": "SPEAKER_01"
+            },
+            {
+                "word": "to",
+                "start": 104.628,
+                "end": 104.748,
+                "score": 0.476,
+                "speaker": "SPEAKER_01"
+            },
+            {
+                "word": "protect",
+                "start": 104.788,
+                "end": 105.329,
+                "score": 0.406,
+                "speaker": "SPEAKER_01"
+            },
+            {
+                "word": "domestic",
+                "start": 105.349,
+                "end": 105.709,
+                "score": 0.468,
+                "speaker": "SPEAKER_01"
+            },
+            {
+                "word": "production,",
+                "start": 105.729,
+                "end": 106.189,
+                "score": 0.367,
+                "speaker": "SPEAKER_01"
+            },
+            {
+                "word": "it",
+                "start": 106.269,
+                "end": 106.63,
+                "score": 0.743,
+                "speaker": "SPEAKER_01"
+            },
+            {
+                "word": "is",
+                "start": 106.69,
+                "end": 106.79,
+                "score": 0.514,
+                "speaker": "SPEAKER_01"
+            },
+            {
+                "word": "necessary",
+                "start": 106.81,
+                "end": 107.29,
+                "score": 0.346,
+                "speaker": "SPEAKER_01"
+            },
+            {
+                "word": "to",
+                "start": 107.33,
+                "end": 107.39,
+                "score": 0.418,
+                "speaker": "SPEAKER_01"
+            },
+            {
+                "word": "introduce,",
+                "start": 107.43,
+                "end": 107.91,
+                "score": 0.451,
+                "speaker": "SPEAKER_01"
+            },
+            {
+                "word": "as",
+                "start": 108.611,
+                "end": 108.791,
+                "score": 0.659,
+                "speaker": "SPEAKER_01"
+            },
+            {
+                "word": "far",
+                "start": 109.091,
+                "end": 109.291,
+                "score": 0.627,
+                "speaker": "SPEAKER_01"
+            },
+            {
+                "word": "as",
+                "start": 109.371,
+                "end": 109.431,
+                "score": 0.304,
+                "speaker": "SPEAKER_01"
+            },
+            {
+                "word": "I",
+                "start": 109.451,
+                "end": 109.471,
+                "score": 0.001,
+                "speaker": "SPEAKER_01"
+            },
+            {
+                "word": "know,",
+                "start": 109.551,
+                "end": 110.132,
+                "score": 0.674,
+                "speaker": "SPEAKER_01"
+            },
+            {
+                "word": "from",
+                "start": 110.192,
+                "end": 110.512,
+                "score": 0.606,
+                "speaker": "SPEAKER_01"
+            },
+            {
+                "word": "May",
+                "start": 110.572,
+                "end": 110.672,
+                "score": 0.439,
+                "speaker": "SPEAKER_01"
+            },
+            {
+                "word": "1st",
+                "start": 110.692,
+                "end": 110.792,
+                "score": 0.786,
+                "speaker": "SPEAKER_01"
+            },
+            {
+                "word": "to",
+                "start": 110.812,
+                "end": 110.912,
+                "score": 0.318,
+                "speaker": "SPEAKER_01"
+            },
+            {
+                "word": "October",
+                "start": 111.012,
+                "end": 111.372,
+                "score": 0.401,
+                "speaker": "SPEAKER_01"
+            },
+            {
+                "word": "1st,",
+                "start": 111.412,
+                "end": 111.532,
+                "score": 0.526,
+                "speaker": "SPEAKER_01"
+            },
+            {
+                "word": "that",
+                "start": 111.552,
+                "end": 111.732,
+                "score": 0.383,
+                "speaker": "SPEAKER_01"
+            },
+            {
+                "word": "is,",
+                "start": 111.793,
+                "end": 111.853,
+                "score": 0.144,
+                "speaker": "SPEAKER_01"
+            },
+            {
+                "word": "to",
+                "start": 111.873,
+                "end": 111.993,
+                "score": 0.731,
+                "speaker": "SPEAKER_01"
+            },
+            {
+                "word": "prohibit",
+                "start": 112.013,
+                "end": 112.513,
+                "score": 0.385,
+                "speaker": "SPEAKER_01"
+            },
+            {
+                "word": "importation,",
+                "start": 112.573,
+                "end": 113.313,
+                "score": 0.393,
+                "speaker": "SPEAKER_01"
+            },
+            {
+                "word": "except",
+                "start": 113.373,
+                "end": 113.834,
+                "score": 0.465,
+                "speaker": "SPEAKER_01"
+            },
+            {
+                "word": "for",
+                "start": 113.894,
+                "end": 114.034,
+                "score": 0.68,
+                "speaker": "SPEAKER_01"
+            },
+            {
+                "word": "the",
+                "start": 114.054,
+                "end": 114.214,
+                "score": 0.453,
+                "speaker": "SPEAKER_01"
+            },
+            {
+                "word": "culture,",
+                "start": 114.234,
+                "end": 114.554,
+                "score": 0.5,
+                "speaker": "SPEAKER_01"
+            },
+            {
+                "word": "which",
+                "start": 114.574,
+                "end": 114.834,
+                "score": 0.405,
+                "speaker": "SPEAKER_01"
+            },
+            {
+                "word": "is",
+                "start": 114.894,
+                "end": 114.934,
+                "score": 0.038,
+                "speaker": "SPEAKER_01"
+            },
+            {
+                "word": "insufficient",
+                "start": 114.954,
+                "end": 115.475,
+                "score": 0.303,
+                "speaker": "SPEAKER_01"
+            },
+            {
+                "word": "for",
+                "start": 115.515,
+                "end": 115.655,
+                "score": 0.461,
+                "speaker": "SPEAKER_01"
+            },
+            {
+                "word": "us.",
+                "start": 115.695,
+                "end": 115.735,
+                "score": 0.15,
+                "speaker": "SPEAKER_01"
+            }
+        ],
+        "speaker": "SPEAKER_01"
+    },
+    {
+        "start": 116.315,
+        "end": 118.936,
+        "text": " The import of food jumped by 11%.",
+        "words": [
+            {
+                "word": "The",
+                "start": 116.315,
+                "end": 116.735,
+                "score": 0.662,
+                "speaker": "SPEAKER_03"
+            },
+            {
+                "word": "import",
+                "start": 116.815,
+                "end": 117.355,
+                "score": 0.686,
+                "speaker": "SPEAKER_03"
+            },
+            {
+                "word": "of",
+                "start": 117.635,
+                "end": 117.895,
+                "score": 0.361,
+                "speaker": "SPEAKER_03"
+            },
+            {
+                "word": "food",
+                "start": 117.955,
+                "end": 118.396,
+                "score": 0.799,
+                "speaker": "SPEAKER_03"
+            },
+            {
+                "word": "jumped",
+                "start": 118.456,
+                "end": 118.836,
+                "score": 0.384,
+                "speaker": "SPEAKER_03"
+            },
+            {
+                "word": "by",
+                "start": 118.856,
+                "end": 118.936,
+                "score": 0.286,
+                "speaker": "SPEAKER_03"
+            },
+            {
+                "word": "11%."
+            }
+        ],
+        "speaker": "SPEAKER_03"
+    },
+    {
+        "start": 118.996,
+        "end": 120.356,
+        "text": "We pay only 270 million euros for vegetables.",
+        "words": [
+            {
+                "word": "We",
+                "start": 118.996,
+                "end": 119.136,
+                "score": 0.573,
+                "speaker": "SPEAKER_03"
+            },
+            {
+                "word": "pay",
+                "start": 119.176,
+                "end": 119.376,
+                "score": 0.513,
+                "speaker": "SPEAKER_03"
+            },
+            {
+                "word": "only",
+                "start": 119.396,
+                "end": 119.476,
+                "score": 0.001,
+                "speaker": "SPEAKER_03"
+            },
+            {
+                "word": "270"
+            },
+            {
+                "word": "million",
+                "start": 119.516,
+                "end": 119.736,
+                "score": 0.255,
+                "speaker": "SPEAKER_03"
+            },
+            {
+                "word": "euros",
+                "start": 119.756,
+                "end": 119.856,
+                "score": 0.132,
+                "speaker": "SPEAKER_03"
+            },
+            {
+                "word": "for",
+                "start": 119.876,
+                "end": 119.976,
+                "score": 0.478,
+                "speaker": "SPEAKER_03"
+            },
+            {
+                "word": "vegetables.",
+                "start": 119.996,
+                "end": 120.356,
+                "score": 0.426,
+                "speaker": "SPEAKER_03"
+            }
+        ],
+        "speaker": "SPEAKER_03"
+    },
+    {
+        "start": 120.376,
+        "end": 124.237,
+        "text": "Similarly, domestic food is thrown away.",
+        "words": [
+            {
+                "word": "Similarly,",
+                "start": 120.376,
+                "end": 121.516,
+                "score": 0.793,
+                "speaker": "SPEAKER_03"
+            },
+            {
+                "word": "domestic",
+                "start": 121.716,
+                "end": 122.477,
+                "score": 0.725,
+                "speaker": "SPEAKER_03"
+            },
+            {
+                "word": "food",
+                "start": 122.497,
+                "end": 122.597,
+                "score": 0.138,
+                "speaker": "SPEAKER_03"
+            },
+            {
+                "word": "is",
+                "start": 122.677,
+                "end": 123.097,
+                "score": 0.7,
+                "speaker": "SPEAKER_03"
+            },
+            {
+                "word": "thrown",
+                "start": 123.577,
+                "end": 123.837,
+                "score": 0.462,
+                "speaker": "SPEAKER_01"
+            },
+            {
+                "word": "away.",
+                "start": 123.857,
+                "end": 124.237,
+                "score": 0.629,
+                "speaker": "SPEAKER_01"
+            }
+        ],
+        "speaker": "SPEAKER_03"
+    },
+    {
+        "start": 124.257,
+        "end": 130.158,
+        "text": "To get to the point where that tourist eats our domestic food, and not imported from Ukraine, Albania, Macedonia and so on.",
+        "words": [
+            {
+                "word": "To",
+                "start": 124.257,
+                "end": 124.337,
+                "score": 0.602,
+                "speaker": "SPEAKER_01"
+            },
+            {
+                "word": "get",
+                "start": 124.377,
+                "end": 124.477,
+                "score": 0.297,
+                "speaker": "SPEAKER_01"
+            },
+            {
+                "word": "to",
+                "start": 124.497,
+                "end": 124.677,
+                "score": 0.744,
+                "speaker": "SPEAKER_01"
+            },
+            {
+                "word": "the",
+                "start": 124.697,
+                "end": 124.817,
+                "score": 0.143,
+                "speaker": "SPEAKER_01"
+            },
+            {
+                "word": "point",
+                "start": 124.857,
+                "end": 125.077,
+                "score": 0.141,
+                "speaker": "SPEAKER_01"
+            },
+            {
+                "word": "where",
+                "start": 125.097,
+                "end": 125.197,
+                "score": 0.279,
+                "speaker": "SPEAKER_01"
+            },
+            {
+                "word": "that",
+                "start": 125.217,
+                "end": 125.377,
+                "score": 0.642,
+                "speaker": "SPEAKER_01"
+            },
+            {
+                "word": "tourist",
+                "start": 125.397,
+                "end": 125.857,
+                "score": 0.701,
+                "speaker": "SPEAKER_01"
+            },
+            {
+                "word": "eats",
+                "start": 125.917,
+                "end": 126.157,
+                "score": 0.599,
+                "speaker": "SPEAKER_01"
+            },
+            {
+                "word": "our",
+                "start": 126.197,
+                "end": 126.257,
+                "score": 0.149,
+                "speaker": "SPEAKER_01"
+            },
+            {
+                "word": "domestic",
+                "start": 126.277,
+                "end": 126.718,
+                "score": 0.592,
+                "speaker": "SPEAKER_01"
+            },
+            {
+                "word": "food,",
+                "start": 126.758,
+                "end": 127.038,
+                "score": 0.524,
+                "speaker": "SPEAKER_01"
+            },
+            {
+                "word": "and",
+                "start": 127.098,
+                "end": 127.198,
+                "score": 0.548,
+                "speaker": "SPEAKER_01"
+            },
+            {
+                "word": "not",
+                "start": 127.238,
+                "end": 127.338,
+                "score": 0.394,
+                "speaker": "SPEAKER_01"
+            },
+            {
+                "word": "imported",
+                "start": 127.358,
+                "end": 127.818,
+                "score": 0.393,
+                "speaker": "SPEAKER_01"
+            },
+            {
+                "word": "from",
+                "start": 127.898,
+                "end": 128.018,
+                "score": 0.227,
+                "speaker": "SPEAKER_01"
+            },
+            {
+                "word": "Ukraine,",
+                "start": 128.138,
+                "end": 128.498,
+                "score": 0.518,
+                "speaker": "SPEAKER_01"
+            },
+            {
+                "word": "Albania,",
+                "start": 128.658,
+                "end": 129.178,
+                "score": 0.868,
+                "speaker": "SPEAKER_01"
+            },
+            {
+                "word": "Macedonia",
+                "start": 129.198,
+                "end": 129.718,
+                "score": 0.808,
+                "speaker": "SPEAKER_01"
+            },
+            {
+                "word": "and",
+                "start": 129.838,
+                "end": 129.898,
+                "score": 0.323,
+                "speaker": "SPEAKER_01"
+            },
+            {
+                "word": "so",
+                "start": 129.918,
+                "end": 130.018,
+                "score": 0.72,
+                "speaker": "SPEAKER_01"
+            },
+            {
+                "word": "on.",
+                "start": 130.078,
+                "end": 130.158,
+                "score": 0.477,
+                "speaker": "SPEAKER_01"
+            }
+        ],
+        "speaker": "SPEAKER_01"
+    },
+    {
+        "start": 130.178,
+        "end": 137.74,
+        "text": "Third countries are more competitive because they pay cheaper labor and do not use expensive protective equipment that are due to be used by the member countries.",
+        "words": [
+            {
+                "word": "Third",
+                "start": 130.178,
+                "end": 130.298,
+                "score": 0.104,
+                "speaker": "SPEAKER_01"
+            },
+            {
+                "word": "countries",
+                "start": 130.478,
+                "end": 130.879,
+                "score": 0.392,
+                "speaker": "SPEAKER_03"
+            },
+            {
+                "word": "are",
+                "start": 130.939,
+                "end": 131.039,
+                "score": 0.264,
+                "speaker": "SPEAKER_03"
+            },
+            {
+                "word": "more",
+                "start": 131.059,
+                "end": 131.179,
+                "score": 0.2,
+                "speaker": "SPEAKER_03"
+            },
+            {
+                "word": "competitive",
+                "start": 131.199,
+                "end": 131.739,
+                "score": 0.581,
+                "speaker": "SPEAKER_03"
+            },
+            {
+                "word": "because",
+                "start": 131.759,
+                "end": 131.959,
+                "score": 0.193,
+                "speaker": "SPEAKER_03"
+            },
+            {
+                "word": "they",
+                "start": 131.979,
+                "end": 132.099,
+                "score": 0.144,
+                "speaker": "SPEAKER_03"
+            },
+            {
+                "word": "pay",
+                "start": 132.119,
+                "end": 132.299,
+                "score": 0.748,
+                "speaker": "SPEAKER_03"
+            },
+            {
+                "word": "cheaper",
+                "start": 132.319,
+                "end": 132.639,
+                "score": 0.483,
+                "speaker": "SPEAKER_03"
+            },
+            {
+                "word": "labor",
+                "start": 132.659,
+                "end": 133.039,
+                "score": 0.666,
+                "speaker": "SPEAKER_03"
+            },
+            {
+                "word": "and",
+                "start": 133.059,
+                "end": 133.159,
+                "score": 0.709,
+                "speaker": "SPEAKER_03"
+            },
+            {
+                "word": "do",
+                "start": 133.179,
+                "end": 133.299,
+                "score": 0.64,
+                "speaker": "SPEAKER_03"
+            },
+            {
+                "word": "not",
+                "start": 133.379,
+                "end": 133.679,
+                "score": 0.809,
+                "speaker": "SPEAKER_03"
+            },
+            {
+                "word": "use",
+                "start": 133.719,
+                "end": 133.779,
+                "score": 0.002,
+                "speaker": "SPEAKER_03"
+            },
+            {
+                "word": "expensive",
+                "start": 133.819,
+                "end": 134.539,
+                "score": 0.511,
+                "speaker": "SPEAKER_03"
+            },
+            {
+                "word": "protective",
+                "start": 134.559,
+                "end": 135.02,
+                "score": 0.477,
+                "speaker": "SPEAKER_03"
+            },
+            {
+                "word": "equipment",
+                "start": 135.04,
+                "end": 135.42,
+                "score": 0.424,
+                "speaker": "SPEAKER_03"
+            },
+            {
+                "word": "that",
+                "start": 135.48,
+                "end": 135.62,
+                "score": 0.236,
+                "speaker": "SPEAKER_03"
+            },
+            {
+                "word": "are",
+                "start": 135.64,
+                "end": 135.76,
+                "score": 0.312,
+                "speaker": "SPEAKER_03"
+            },
+            {
+                "word": "due",
+                "start": 135.78,
+                "end": 135.9,
+                "score": 0.203,
+                "speaker": "SPEAKER_03"
+            },
+            {
+                "word": "to",
+                "start": 135.92,
+                "end": 136.06,
+                "score": 0.702,
+                "speaker": "SPEAKER_03"
+            },
+            {
+                "word": "be",
+                "start": 136.08,
+                "end": 136.14,
+                "score": 0.23,
+                "speaker": "SPEAKER_03"
+            },
+            {
+                "word": "used",
+                "start": 136.22,
+                "end": 136.44,
+                "score": 0.56,
+                "speaker": "SPEAKER_03"
+            },
+            {
+                "word": "by",
+                "start": 136.58,
+                "end": 136.82,
+                "score": 0.524,
+                "speaker": "SPEAKER_03"
+            },
+            {
+                "word": "the",
+                "start": 136.86,
+                "end": 136.98,
+                "score": 0.522,
+                "speaker": "SPEAKER_03"
+            },
+            {
+                "word": "member",
+                "start": 137.06,
+                "end": 137.3,
+                "score": 0.402,
+                "speaker": "SPEAKER_03"
+            },
+            {
+                "word": "countries.",
+                "start": 137.34,
+                "end": 137.74,
+                "score": 0.543,
+                "speaker": "SPEAKER_03"
+            }
+        ],
+        "speaker": "SPEAKER_03"
+    },
+    {
+        "start": 137.8,
+        "end": 142.181,
+        "text": "And all this food, the vegetables could not even donate.",
+        "words": [
+            {
+                "word": "And",
+                "start": 137.8,
+                "end": 137.88,
+                "score": 0.27,
+                "speaker": "SPEAKER_03"
+            },
+            {
+                "word": "all",
+                "start": 139.441,
+                "end": 139.501,
+                "score": 0.311,
+                "speaker": "SPEAKER_03"
+            },
+            {
+                "word": "this",
+                "start": 139.521,
+                "end": 139.601,
+                "score": 0.012,
+                "speaker": "SPEAKER_03"
+            },
+            {
+                "word": "food,",
+                "start": 139.621,
+                "end": 139.921,
+                "score": 0.549,
+                "speaker": "SPEAKER_03"
+            },
+            {
+                "word": "the",
+                "start": 139.941,
+                "end": 140.021,
+                "score": 0.175,
+                "speaker": "SPEAKER_03"
+            },
+            {
+                "word": "vegetables",
+                "start": 140.041,
+                "end": 140.621,
+                "score": 0.492,
+                "speaker": "SPEAKER_03"
+            },
+            {
+                "word": "could",
+                "start": 140.641,
+                "end": 140.821,
+                "score": 0.417,
+                "speaker": "SPEAKER_03"
+            },
+            {
+                "word": "not",
+                "start": 140.881,
+                "end": 141.181,
+                "score": 0.649,
+                "speaker": "SPEAKER_03"
+            },
+            {
+                "word": "even",
+                "start": 141.261,
+                "end": 141.561,
+                "score": 0.516,
+                "speaker": "SPEAKER_03"
+            },
+            {
+                "word": "donate.",
+                "start": 141.601,
+                "end": 142.181,
+                "score": 0.778,
+                "speaker": "SPEAKER_03"
+            }
+        ],
+        "speaker": "SPEAKER_03"
+    },
+    {
+        "start": 142.341,
+        "end": 144.062,
+        "text": "They asked, they say, to pay the tax first.",
+        "words": [
+            {
+                "word": "They",
+                "start": 142.341,
+                "end": 142.421,
+                "score": 0.221,
+                "speaker": "SPEAKER_03"
+            },
+            {
+                "word": "asked,",
+                "start": 142.481,
+                "end": 142.741,
+                "score": 0.543,
+                "speaker": "SPEAKER_03"
+            },
+            {
+                "word": "they",
+                "start": 142.761,
+                "end": 142.861,
+                "score": 0.1,
+                "speaker": "SPEAKER_03"
+            },
+            {
+                "word": "say,",
+                "start": 142.881,
+                "end": 143.021,
+                "score": 0.409,
+                "speaker": "SPEAKER_03"
+            },
+            {
+                "word": "to",
+                "start": 143.041,
+                "end": 143.081,
+                "score": 0.008,
+                "speaker": "SPEAKER_03"
+            },
+            {
+                "word": "pay",
+                "start": 143.102,
+                "end": 143.282,
+                "score": 0.755,
+                "speaker": "SPEAKER_03"
+            },
+            {
+                "word": "the",
+                "start": 143.302,
+                "end": 143.502,
+                "score": 0.567,
+                "speaker": "SPEAKER_03"
+            },
+            {
+                "word": "tax",
+                "start": 143.762,
+                "end": 143.862,
+                "score": 0.296,
+                "speaker": "SPEAKER_03"
+            },
+            {
+                "word": "first.",
+                "start": 143.882,
+                "end": 144.062,
+                "score": 0.369,
+                "speaker": "SPEAKER_03"
+            }
+        ],
+        "speaker": "SPEAKER_03"
+    }
+]

@@ -13,17 +13,14 @@ from modal import Image, Stub, asgi_app, NetworkFileSystem
 from whisperx import load_align_model, align, SubtitlesProcessor
 import whisperx
 import Levenshtein
-import pysrt
-import webvtt
 import requests
 from whisperx.SubtitlesProcessor import SubtitlesProcessor
 
-CACHE_PATH = "/build_cache" 
+CACHE_PATH = "/build_cache"
 logger = logging.getLogger(__name__)
-MODEL_DIR = "/models" 
+MODEL_DIR = "/models"
 HF_AUTH_TOKEN = "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"
 os.environ["TRANSFORMERS_CACHE"] = "/build_cache"
-
 # Define persisted network file systems for models and output files
 #volume = NetworkFileSystem.persisted("dataset-cache-vol")
 volume = NetworkFileSystem.from_name("dataset-cache-vol", create_if_missing=True)
@@ -41,7 +38,7 @@ LANGUAGE_MODEL_MAP = {
     "sl": "bekirbakar/wav2vec2-large-xls-r-300m-slovenian",
 }
 
-test_audio_url = "https://s3.eu-central-2.wasabisys.com/qira/714/2024/8/WhatsApp_Audio_2024-08-08_at_14.41.4_1723125385333/WhatsApp_Audio_2024-08-08_at_14.41.4_1723125385333.mp3"
+test_audio_url = "https://s3.eu-central-2.wasabisys.com/qira/658/2024/7/_ovjeku_se_plae__bacio_sam_deset_ton_1722256407942/_ovjeku_se_plae__bacio_sam_deset_ton_1722256407942.mp3"
 
 
 def transcribe_audio(audio_url):
@@ -203,6 +200,7 @@ whisperX_image = (
         "ffmpeg-python",
         "httpx",
         "pyannote.audio==3.1.1",
+        'Levenshtein'
     )
     .pip_install("git+https://github.com/SYSTRAN/faster-whisper@65551c081f17f30e9e73debbbdd148233de67ac7")
     .env({
@@ -260,7 +258,7 @@ async def transcribe_audio_endpoint(
         except httpx.HTTPStatusError as exc:
             raise HTTPException(status_code=exc.response.status_code, detail="Error downloading file from URL")
     
-    result = transcribe_and_align_audio(file_contents, transcription_request.language, transcription_request.output_formats)
+    result = transcribe_and_align_audio(file_contents, transcription_request.language, transcription_request.output_formats, transcription_request.file_url)
 
     return {
         'status': 'success',
@@ -293,14 +291,16 @@ def fastapi_app():
     return web_app
 
 
-def transcribe_and_align_audio(file_contents: bytes, language: str, output_formats: list, custom_dictionary: str = ""):
+def transcribe_and_align_audio(file_contents: bytes, language: str, output_formats: list, file_url: str, custom_dictionary: str = ""):
     language = language.replace('"', '')
     output_formats = [format.replace('"', '') for format in output_formats]
     microtime = str(int(time.time() * 1000))
 
+    print(f"File url:{file_url}")
+
     device = "cuda"
     batch_size = 16
-    compute_type = "float32"
+    compute_type = "float16"
 
     json_path = None
     aligned_json_path = None
@@ -369,7 +369,6 @@ def transcribe_and_align_audio(file_contents: bytes, language: str, output_forma
         diarize_model = whisperx.DiarizationPipeline(device=device, use_auth_token=hf_api_token)
         diarize_segments = diarize_model(temp_audio_file_path)
         result = whisperx.assign_word_speakers(diarize_segments, aligned_result)
-        print(f"Diarization Result: {result}")
 
         # Prepare diarization results for JSON
         diarization_results_for_json = []
@@ -396,30 +395,32 @@ def transcribe_and_align_audio(file_contents: bytes, language: str, output_forma
             raise e
 
     # Parse VTT to Single Line Latin Char String:
-    whisper_vtt_text = parse_webvtt(vtt_path)
-    print(f"Whisper VTT Converted To Text: {whisper_vtt_text}")
-    #for live: distance_from_whisper = calc_levenshtein_distance(transcription_text, cyrillic_to_latin(whisper_vtt_text))
-    distance_from_whisper = 1
-    # If Distance From Whisper Is Not Satisfactory, Use Gladia
-    if distance_from_whisper <= transcription_threshold:
-        transcript = transcribe_audio(test_audio_url)
-        gladia_transcript_text = transcript['result']['transcription']['full_transcript']  # Raw Text
-        distance_from_gladia = calc_levenshtein_distance(transcription_text, cyrillic_to_latin(gladia_transcript_text))
+    if vtt_path:
+        whisper_vtt_text = parse_webvtt(vtt_path)
+        print(f"Whisper VTT Converted To Text: {whisper_vtt_text}")
+        distance_from_whisper = calc_levenshtein_distance(transcription_text, cyrillic_to_latin(whisper_vtt_text))
+        print(f"Whisper Distance: {distance_from_whisper}")
+        # If Distance From Whisper Is Not Satisfactory, Use Gladia
+        if distance_from_whisper <= transcription_threshold:
+            print(file_url)
+            transcript = transcribe_audio(file_url)
+            gladia_transcript_text = transcript['result']['transcription']['full_transcript']  # Raw Text
+            distance_from_gladia = calc_levenshtein_distance(transcription_text, cyrillic_to_latin(gladia_transcript_text))
 
-        # If Gladia is closer, save its VTT
-        if distance_from_gladia > distance_from_whisper:
-            vtt_path = os.path.join("output", f"subtitles_gladia_{microtime}.vtt")
-            utterances = transcript['result']['transcription']['utterances']  # Get the utterances array
+            # If Gladia is closer, save its VTT
+            if distance_from_gladia > distance_from_whisper:
+                vtt_path = os.path.join("output", f"subtitles_gladia_{microtime}.vtt")
+                utterances = transcript['result']['transcription']['utterances']  # Get the utterances array
 
-            with open(vtt_path, "w", encoding="utf-8") as f:
-                f.write("WEBVTT\n\n")
-                for utterance in utterances:
-                    start_time = format_timestamp(utterance['start'], is_vtt=True)
-                    end_time = format_timestamp(utterance['end'], is_vtt=True)
-                    f.write(f"{start_time} --> {end_time}\n{utterance['text']}\n\n")
+                with open(vtt_path, "w", encoding="utf-8") as f:
+                    f.write("WEBVTT\n\n")
+                    for utterance in utterances:
+                        start_time = format_timestamp(utterance['start'], is_vtt=True)
+                        end_time = format_timestamp(utterance['end'], is_vtt=True)
+                        f.write(f"{start_time} --> {end_time}\n{utterance['text']}\n\n")
 
-            print(f"Gladia VTT file written to {vtt_path}")
-            output_files['vtt'] = vtt_path
+                print(f"Gladia VTT file written to {vtt_path}")
+                output_files['vtt'] = vtt_path
 
     # Return the final result
     full_paths = {key: value.replace('/root/', '') for key, value in output_files.items()}
@@ -443,4 +444,7 @@ def write_vtt(segments, path, language):
             start = format_timestamp(subtitle['start'], is_vtt=True)
             end = format_timestamp(subtitle['end'], is_vtt=True)
             f.write(f"{start} --> {end}\n{subtitle['text']}\n\n")
+
+
+
 
