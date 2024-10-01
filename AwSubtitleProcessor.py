@@ -41,9 +41,29 @@ class AwSubtitleProcessor:
         current_line = ""
         line_start = 0
         max_char_length = self.max_char_length  # Assuming this is set elsewhere in your class
+        pause_threshold = 5  # Threshold for pauses in seconds
 
         for i, word_data in enumerate(segments):
             try:
+                # Check for a pause greater than or equal to 10 seconds
+                if i > 0 and (word_data['start'] - segments[i - 1]['end']) >= pause_threshold:
+
+                    # If there's a pause, end the current subtitle line
+                    print(f"DETECTED A CROSSING OF THE PAUSE THRESHOLD: {word_data['start']} to {segments[i-1]['end']}")
+
+                    line_end = segments[i - 1]['end']
+
+                    subtitle_lines.append({
+                        "line": self.cyrillic_to_latin(current_line.strip()),  # Strip trailing space
+                        "start": line_start,
+                        "end": line_end
+                    })
+
+                    # Start a new line with the current word after the pause
+                    current_line = word_data['word'] + " "
+                    line_start = word_data['start']
+                    continue  # Skip the length check and move to the next word
+
                 # Check if adding the new word exceeds the max_char_length
                 if len(current_line) + len(word_data['word']) + 1 <= max_char_length:  # +1 for the space
                     if current_line == "":
