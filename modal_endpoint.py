@@ -315,15 +315,16 @@ def transcribe_and_align_audio(file_contents: bytes, language: str, output_forma
                 print("Sucesfully fetched words!")
 
             subtitle_params = aw_subtitle_processor.prepare_params_for_write_vtt(words)
-            print(f"PARAMS: {json.dumps(subtitle_params, indent=4)}")
+            #print(f"PARAMS: {json.dumps(subtitle_params, indent=4)}")
 
 
 
             vtt_path = os.path.join("output", f"subtitles_{microtime}.vtt")
 
             try:
-                write_vtt(subtitle_params, vtt_path, language)
-                logger.info(f"VTT file created successfully at {vtt_path}")
+                aw_subtitle_processor.write_vtt(subtitle_params, vtt_path, language)
+                #write_vtt(subtitle_params, vtt_path, language)
+                #logger.info(f"VTT file created successfully at {vtt_path}")
                 whisper_vtt_text = parse_webvtt(vtt_path)
             except Exception as e:
                 logger.error(f"Failed to create VTT file at {vtt_path}: {e}")
@@ -358,25 +359,25 @@ def transcribe_and_align_audio(file_contents: bytes, language: str, output_forma
     }
 
 
-def write_vtt(segments, path, language):
-    #subtitles_processor = SubtitlesProcessor(segments, language)
-    #processed_subtitles = subtitles_processor.process_segments()
-
-    with open(path, 'w') as f:
-        f.write("WEBVTT\n\n")
-        for subtitle in segments:
-            start = format_timestamp(subtitle['start'], is_vtt=True)
-            end = format_timestamp(subtitle['end'], is_vtt=True)
-            f.write(f"{start} --> {end}\n{subtitle['line']}\n\n")
-            print(f"{start} --> {end}\n{subtitle['line']}\n\n")
-def new_write_vtt(segments):
-    words = []
-    itterable = segments["segments"]
-    for segment in itterable:
-        #print(f"segment {segment['words']}")
-        for word_segment in segment["words"]:
-            words.append(word_segment)
-    return words
+##def write_vtt(segments, path, language):
+##    #subtitles_processor = SubtitlesProcessor(segments, language)
+##    #processed_subtitles = subtitles_processor.process_segments()
+##
+##    with open(path, 'w') as f:
+##        f.write("WEBVTT\n\n")
+##        for subtitle in segments:
+##            start = format_timestamp(subtitle['start'], is_vtt=True)
+##            end = format_timestamp(subtitle['end'], is_vtt=True)
+##            f.write(f"{start} --> {end}\n{subtitle['line']}\n\n")
+##            #print(f"{start} --> {end}\n{subtitle['line']}\n\n")
+##def new_write_vtt(segments):
+##    words = []
+##    itterable = segments["segments"]
+##    for segment in itterable:
+##        #print(f"segment {segment['words']}")
+##        for word_segment in segment["words"]:
+##            words.append(word_segment)
+##    return words
 
 def confirm_iteration(segments):
     print("Each Word In Words: \n")

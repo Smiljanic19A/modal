@@ -56,7 +56,8 @@ class AwSubtitleProcessor:
                     subtitle_lines.append({
                         "line": self.cyrillic_to_latin(current_line.strip()),  # Strip trailing space
                         "start": line_start,
-                        "end": line_end
+                        "end": line_end,
+                        'pause': True
                     })
 
                     # Start a new line with the current word after the pause
@@ -77,7 +78,8 @@ class AwSubtitleProcessor:
                     subtitle_lines.append({
                         "line": self.cyrillic_to_latin(current_line.strip()),  # Strip trailing space
                         "start": line_start,
-                        "end": line_end
+                        "end": line_end,
+                        'pause': False
                     })
 
                     # Start a new line
@@ -94,7 +96,8 @@ class AwSubtitleProcessor:
             subtitle_lines.append({
                 "line": current_line.strip(),
                 "start": line_start,
-                "end": line_end
+                "end": line_end,
+                'pause': False
             })
 
         return subtitle_lines
@@ -113,5 +116,30 @@ class AwSubtitleProcessor:
         return (
             f"{hours_marker}{minutes:02d}:{seconds:02d}{separator}{milliseconds:03d}"
         )
+
+    def write_vtt(self, segments, path, language):
+        last_end_time = 0
+        with open(path, 'w') as f:
+            f.write("WEBVTT\n\n")
+
+            for i, subtitle in enumerate(segments):
+                if last_end_time == subtitle['end']:
+                    print("Continue")
+                    continue
+                if i == len(segments) - 1 or subtitle['pause'] is True:
+                    start = self.format_timestamp(subtitle['start'], is_vtt=True)
+                    end = self.format_timestamp(subtitle['end'], is_vtt=True)
+                    print("SINGLE LINE DUE TO END OF FILE OR PAUSE:")
+                    print(f"{start} --> {end}\n{subtitle['line']}\n\n")
+                    f.write(f"{start} --> {end}\n{subtitle['line']}\n\n")
+                    last_end_time = subtitle['end']
+                    continue
+                start = self.format_timestamp(subtitle['start'], is_vtt=True)
+                end = self.format_timestamp(segments[i + 1]['end'], is_vtt=True)
+                last_end_time = segments[i + 1]['end']
+                print("regular: ")
+                f.write(f"{start} --> {end}\n{subtitle['line']}\n{segments[i + 1]['line']}\n\n")
+                print(f"{start} --> {end}\n{subtitle['line']}\n{segments[i + 1]['line']}\n\n")
+
 
 
