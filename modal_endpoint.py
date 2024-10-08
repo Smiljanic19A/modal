@@ -358,27 +358,6 @@ def transcribe_and_align_audio(file_contents: bytes, language: str, output_forma
         'full_paths': full_paths  # Ensure vtt is included here
     }
 
-
-##def write_vtt(segments, path, language):
-##    #subtitles_processor = SubtitlesProcessor(segments, language)
-##    #processed_subtitles = subtitles_processor.process_segments()
-##
-##    with open(path, 'w') as f:
-##        f.write("WEBVTT\n\n")
-##        for subtitle in segments:
-##            start = format_timestamp(subtitle['start'], is_vtt=True)
-##            end = format_timestamp(subtitle['end'], is_vtt=True)
-##            f.write(f"{start} --> {end}\n{subtitle['line']}\n\n")
-##            #print(f"{start} --> {end}\n{subtitle['line']}\n\n")
-##def new_write_vtt(segments):
-##    words = []
-##    itterable = segments["segments"]
-##    for segment in itterable:
-##        #print(f"segment {segment['words']}")
-##        for word_segment in segment["words"]:
-##            words.append(word_segment)
-##    return words
-
 def confirm_iteration(segments):
     print("Each Word In Words: \n")
     for segment in segments:

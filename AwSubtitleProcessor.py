@@ -124,22 +124,22 @@ class AwSubtitleProcessor:
 
             for i, subtitle in enumerate(segments):
                 if last_end_time == subtitle['end']:
-                    print("Continue")
+                    #print("Continue")
                     continue
                 if i == len(segments) - 1 or subtitle['pause'] is True:
                     start = self.format_timestamp(subtitle['start'], is_vtt=True)
                     end = self.format_timestamp(subtitle['end'], is_vtt=True)
-                    print("SINGLE LINE DUE TO END OF FILE OR PAUSE:")
-                    print(f"{start} --> {end}\n{subtitle['line']}\n\n")
+                    #print("SINGLE LINE DUE TO END OF FILE OR PAUSE:")
+                    #print(f"{start} --> {end}\n{subtitle['line']}\n\n")
                     f.write(f"{start} --> {end}\n{subtitle['line']}\n\n")
                     last_end_time = subtitle['end']
                     continue
                 start = self.format_timestamp(subtitle['start'], is_vtt=True)
                 end = self.format_timestamp(segments[i + 1]['end'], is_vtt=True)
                 last_end_time = segments[i + 1]['end']
-                print("regular: ")
+                #print("regular: ")
                 f.write(f"{start} --> {end}\n{subtitle['line']}\n{segments[i + 1]['line']}\n\n")
-                print(f"{start} --> {end}\n{subtitle['line']}\n{segments[i + 1]['line']}\n\n")
+                #print(f"{start} --> {end}\n{subtitle['line']}\n{segments[i + 1]['line']}\n\n")
 
 
 
